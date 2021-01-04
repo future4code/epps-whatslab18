@@ -2,25 +2,29 @@ import React from 'react';
 import './App.css';
 import styled from 'styled-components'
 import { MessageForm } from './components/Forms';
+import { Message } from './components/Message';
 
+
+// Container principal
 const AppContainer = styled.div`
   display: flex;
+  box-sizing: border-box;
+  margin: auto;
   flex-direction: column;
   max-width: 100vh;
   height: 100vh;
   border: 1px solid black;
-  background-color: #2d8ddd;
-  flex: 1;
+  background: #FFFFFF url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
 `
-
+// Container das mensagens enviadas
 const MessagesContainer = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 15px;
+  flex-grow: 1;
 `
-
+// Fazer o texto do nome ficar negrito
 const BoldText = styled.span`
   font-weight: bold;
 `
@@ -35,7 +39,7 @@ class App extends React.Component {
   }
 
   addMessage = (message) => {
-    this.setState({ messages: [...this.state.messages, message] })
+    this.setState({messages: [...this.state.messages, message] })
   }
 
   render() {
