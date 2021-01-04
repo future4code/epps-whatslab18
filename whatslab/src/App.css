@@ -1,4 +1,4 @@
-.app-container {
+/* .app-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,4 +28,41 @@
   border: solid;
   border-width: 0.1px;
   line-height: 39px;
+} */
+
+/* Estilo do botão */
+.shiny-button {
+  display: inline-block;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  background-color: #169E8E;
+  border-color: hsl(173, 20%, 35%);
+  border-radius: 17px;
+  padding: 2%;
+  margin: 1%;
 }
+
+.shiny-button:hover {
+  color: #FFFFFF;
+  background-color: #18ab9a;
+  background-image: -webkit-linear-gradient(top, #19af9e 0%, #35b7a8 48%, #18ab9a 49%, #18ab9a 82%, #1bc4b0 100%);
+  background-image: -moz-linear-gradient(top, #19af9e 0%, #35b7a8 48%, #18ab9a 49%, #18ab9a 82%, #1bc4b0 100%);
+  background-image: -o-linear-gradient(top, #19af9e 0%, #35b7a8 48%, #18ab9a 49%, #18ab9a 82%, #1bc4b0 100%);
+  background-image: linear-gradient(top, #19af9e 0%, #35b7a8 48%, #18ab9a 49%, #18ab9a 82%, #1bc4b0 100%);
+  border-color: hsl(173, 20%, 38%);
+  -webkit-box-shadow: inset 0 0 1px 1px #1ed8c2, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 1px 1px #1ed8c2, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 1px 1px #1ed8c2, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -webkit-text-shadow: 1px 1px 1px #0b5249;
+  -moz-text-shadow: 1px 1px 1px #0b5249;
+  -o-text-shadow: 1px 1px 1px #0b5249;
+  text-shadow: 1px 1px 1px #0b5249;
+}
+
